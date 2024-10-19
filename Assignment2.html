@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>1.The purpose and basic syntax of the button element:</h4>
+    <p>The button element is used to create a clickable buttons on web pages.<br>
+    Syntax:
+    <button>Click Me</button></p><br>
+    <h4>2.Differences between button and input type="button":</h4>
+       <p>button element: can contain text,images and other HTML elements.<br>
+            <button>Click Me</button><br>
+        input type="button": is simply button with no content.<br>
+        <input type="button" value="Submit"></p> <br>
+    <h4>3&4.Button types (submit,reset,button) and their roles in form:</h4> 
+    <p>Submit button: submits the form data to the server for processing. <br>
+        Reset button: resets all form fields to their default values. <br>
+        Button: used to handle JavaScript functions. <br>
+        <form action="">
+            <button type="submit">Submit</button><br>
+            <button type="reset">Reset</button><br>
+            <button type="button" onclick="alert('Button is clicked')">Click Me</button>
+        </form></p><br>
+    <h4>5.How to disable a button using a disabled attribute:</h4>
+    <p><button type="Submit" disabled>Submit</button></p><br>
+    <h4>6.The use of a autofocus Attribute in a Button and when it is appropriate to use:</h4>
+    <p>The autofocus attribute automatically focuses a button when the page loads, meaning the button is ready to be triggered immediately. <br>
+        <button type="button" autofocus>Button</button></p><br>
+    <h4>7.Differences between submit and reset button: <br></h4>
+    <p>Submit button: sends form data to the server for processing. <br>
+        Reset button: clears all the user entered data, resetting the form fields to their default state.</p><br>
+    <h4>8.How to add text and icons inside button using only HTML elements: <br></h4>
+    <p><button type="submit">
+        <img src="image.jpg" alt="Submit button image" style="width:16px; height:16px">Submit
+    </button><br>
+    <button type="submit">
+        <i class="fas fa-check"></i>Submit
+    </button></p>
+    <h4>Form:</h4>
+    <form action="">
+        <fieldset>
+        <h1>Registration form</h1>
+        <label for="name">First Name</label>
+        <input type="text" name="name" placeholder="Enter First Names"><br>
+        <label for="name">Last Name</label>
+        <input type="text" name="name" placeholder="Enter Last Names"><br>
+        <label for="mail">Email</label>
+        <input type="email" name="mail" placeholder="Enter "Email Address> <br>
+        <label for="password">Password</label>
+        <input type="password" name="password"> <br>
+        <label for="gen">Gender</label> <br>
+        Male<input type="radio"> <br>
+        Female <input type="radio"> <br>
+        Other <input type="radio"> <br>
+        <label for="age">Age</label>
+        <input type="number" name="age"> <br>
+        <label for="pref">Preferences:</label>
+        Acrylic Painting <input type="checkbox"><br>
+        Oil Painting <input type="checkbox"><br>
+        Water Color Painting<input type="checkbox"><br>
+        <label for="dropdown">Select Occupation</label>
+        <select name="dropdown" id="">
+            <option value="Student">Student</option>
+            <option value="Teacher">Teacher</option>
+            <option value="Software Developer">Software Developer</option>
+            <option value="Coder">Coder</option>
+        </select><br>
+        <label for="text">Bio</label>
+        <textarea name="text" id="" rows="20" cols="30" placeholder="Share few lines about yourself..."></textarea><br>
+        <button type="reset" name="Reset">RESET</button>
+        <button type="submit" name="submit">SUBMIT</button>
+        </fieldset>
+    </form>
+</body>
+</html>
